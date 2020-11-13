@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="17" passed="16">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4849846" started-at="2020-11-03T05:41:27Z" finished-at="2020-11-03T07:02:17Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4849846" started-at="2020-11-03T05:41:27Z" finished-at="2020-11-03T07:02:17Z">
+      <class name="com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBDeviceRunCall">
+        <test-method status="PASS" signature="runtest()[pri:0, instance:com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBDeviceRunCall@56de5251]" name="runtest" duration-ms="21011" started-at="2020-11-03T15:01:56Z" finished-at="2020-11-03T15:02:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runtest -->
+      </class> <!-- com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBDeviceRunCall -->
+      <class name="com.haoyun.automationtesting.test.aadomain.MainDebug">
+        <test-method status="PASS" signature="zhu()[pri:0, instance:com.haoyun.automationtesting.test.aadomain.MainDebug@2aa3cd93]" name="zhu" duration-ms="5173" started-at="2020-11-03T13:42:50Z" finished-at="2020-11-03T13:42:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zhu -->
+      </class> <!-- com.haoyun.automationtesting.test.aadomain.MainDebug -->
+      <class name="com.haoyun.automationtesting.framework.showMessageFrame">
+        <test-method status="PASS" signature="test()[pri:0, instance:com.haoyun.automationtesting.framework.showMessageFrame[frame0,0,0,0x0,invalid,hidden,layout=java.awt.BorderLayout,title=,resizable,normal,defaultCloseOperation=HIDE_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]]" name="test" duration-ms="1294" started-at="2020-11-03T15:01:55Z" finished-at="2020-11-03T15:01:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- com.haoyun.automationtesting.framework.showMessageFrame -->
+      <class name="com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBDeviceRun">
+        <test-method status="PASS" signature="run()[pri:0, instance:com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBDeviceRun@290d210d]" name="run" duration-ms="21016" started-at="2020-11-03T14:59:25Z" finished-at="2020-11-03T14:59:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+      </class> <!-- com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBDeviceRun -->
+      <class name="com.haoyun.automationtesting.framework.AutoJSCode">
+        <test-method status="PASS" signature="run()[pri:0, instance:com.haoyun.automationtesting.framework.AutoJSCode@4b44655e]" name="run" duration-ms="3288513" started-at="2020-11-03T14:04:37Z" finished-at="2020-11-03T14:59:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+      </class> <!-- com.haoyun.automationtesting.framework.AutoJSCode -->
+      <class name="com.haoyun.automationtesting.framework.AutoSeleniumIDECode">
+        <test-method status="PASS" signature="run()[pri:0, instance:com.haoyun.automationtesting.framework.AutoSeleniumIDECode@10db82ae]" name="run" duration-ms="4360" started-at="2020-11-03T15:01:29Z" finished-at="2020-11-03T15:01:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+      </class> <!-- com.haoyun.automationtesting.framework.AutoSeleniumIDECode -->
+      <class name="com.haoyun.automationtesting.test.aadomain.MainStart">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.haoyun.automationtesting.test.aadomain.MainStart@4387b79e]" name="init" is-config="true" duration-ms="12499" started-at="2020-11-03T13:41:27Z" finished-at="2020-11-03T13:41:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="main()[pri:0, instance:com.haoyun.automationtesting.test.aadomain.MainStart@4387b79e]" name="main" duration-ms="141" started-at="2020-11-03T15:02:17Z" finished-at="2020-11-03T15:02:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.haoyun.automationtesting.test.aadomain.MainStart@4387b79e]" name="after" is-config="true" duration-ms="2" started-at="2020-11-03T15:02:17Z" finished-at="2020-11-03T15:02:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.haoyun.automationtesting.test.aadomain.MainStart -->
+      <class name="com.haoyun.automationtesting.framework.RemoteFTP">
+        <test-method status="PASS" signature="testFavFTPUtil()[pri:0, instance:com.haoyun.automationtesting.framework.RemoteFTP@78b729e6]" name="testFavFTPUtil" duration-ms="21097" started-at="2020-11-03T15:01:34Z" finished-at="2020-11-03T15:01:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFavFTPUtil -->
+      </class> <!-- com.haoyun.automationtesting.framework.RemoteFTP -->
+      <class name="com.haoyun.automationtesting.test.aadomain.RunSelectCase">
+        <test-method status="PASS" signature="run()[pri:0, instance:com.haoyun.automationtesting.test.aadomain.RunSelectCase@78dd667e]" name="run" duration-ms="100069" started-at="2020-11-03T14:59:49Z" finished-at="2020-11-03T15:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+      </class> <!-- com.haoyun.automationtesting.test.aadomain.RunSelectCase -->
+      <class name="com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBRun_old">
+        <test-method status="PASS" signature="YBdemo()[pri:0, instance:com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBRun_old@78047b92]" name="YBdemo" duration-ms="21007" started-at="2020-11-03T13:41:40Z" finished-at="2020-11-03T13:42:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- YBdemo -->
+      </class> <!-- com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBRun_old -->
+      <class name="com.haoyun.automationtesting.test.aadomain.CodeToCase">
+        <test-method status="PASS" signature="zhu()[pri:0, instance:com.haoyun.automationtesting.test.aadomain.CodeToCase@add0edd]" name="zhu" duration-ms="3111" started-at="2020-11-03T13:42:47Z" finished-at="2020-11-03T13:42:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zhu -->
+      </class> <!-- com.haoyun.automationtesting.test.aadomain.CodeToCase -->
+      <class name="com.haoyun.automationtesting.framework.AutoCase">
+        <test-method status="PASS" signature="MainAutoCase()[pri:0, instance:com.haoyun.automationtesting.framework.AutoCase@1d76aeea]" name="MainAutoCase" duration-ms="2947" started-at="2020-11-03T14:59:46Z" finished-at="2020-11-03T14:59:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MainAutoCase -->
+      </class> <!-- com.haoyun.automationtesting.framework.AutoCase -->
+      <class name="com.haoyun.automationtesting.framework.AutoCase_SinglePackage">
+        <test-method status="SKIP" signature="inputexcel(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.haoyun.automationtesting.framework.AutoCase_SinglePackage@19d37183]" name="inputexcel" duration-ms="0" started-at="2020-11-03T13:41:40Z" finished-at="2020-11-03T13:41:40Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method inputexcel requires 4 parameters but 0 were supplied in the @Test annotation.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method inputexcel requires 4 parameters but 0 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:191)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:127)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:376)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1287)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1004)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1093)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
+	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputexcel -->
+      </class> <!-- com.haoyun.automationtesting.framework.AutoCase_SinglePackage -->
+      <class name="com.haoyun.automationtesting.framework.AutoCode">
+        <test-method status="PASS" signature="Run()[pri:0, instance:com.haoyun.automationtesting.framework.AutoCode@501edcf1]" name="Run" duration-ms="3" started-at="2020-11-03T15:01:34Z" finished-at="2020-11-03T15:01:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Run -->
+      </class> <!-- com.haoyun.automationtesting.framework.AutoCode -->
+      <class name="com.haoyun.automationtesting.test.aadomain.RunSelectCase_thread2">
+        <test-method status="PASS" signature="run()[pri:0, instance:com.haoyun.automationtesting.test.aadomain.RunSelectCase_thread2@79ca92b9]" name="run" duration-ms="22011" started-at="2020-11-03T13:42:25Z" finished-at="2020-11-03T13:42:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+      </class> <!-- com.haoyun.automationtesting.test.aadomain.RunSelectCase_thread2 -->
+      <class name="com.haoyun.automationtesting.test.aadomain.RunAllCase">
+        <test-method status="PASS" signature="run()[pri:0, instance:com.haoyun.automationtesting.test.aadomain.RunAllCase@7ea37dbf]" name="run" duration-ms="1301786" started-at="2020-11-03T13:42:55Z" finished-at="2020-11-03T14:04:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+      </class> <!-- com.haoyun.automationtesting.test.aadomain.RunAllCase -->
+      <class name="com.haoyun.automationtesting.interfaces.MDdevices.MDDeviceRunCall">
+        <test-method status="PASS" signature="runtest()[pri:0, instance:com.haoyun.automationtesting.interfaces.MDdevices.MDDeviceRunCall@8909f18]" name="runtest" duration-ms="23728" started-at="2020-11-03T13:42:01Z" finished-at="2020-11-03T13:42:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runtest -->
+      </class> <!-- com.haoyun.automationtesting.interfaces.MDdevices.MDDeviceRunCall -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

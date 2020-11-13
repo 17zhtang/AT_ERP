@@ -1,0 +1,8 @@
+使用说明
+　　要使程序可以运行必须引入JSON-lib包，JSON-lib包同时依赖于以下的JAR包：
+　　commons-lang.jar
+　　commons-beanutils.jar
+　　commons-collections.jar
+　　commons-logging.jar
+　　ezmorph.jar
+　　json-lib-2.2.2-jdk15.jar

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+        <parameter name="test1" value="test11111" />
+  
+  <test name="Test"  preserve-order="true"> <!-- preserve-order 可以保证class按照顺序执行 -->
+    <classes>
+      <class name="com.haoyun.automationtesting.test.aadomain.MainStart"/>
+      
+      <methods>      
+       <dependencies>       
+          <method name ="HKZZ_ZNZZ_HNZZ_SSZZ_YLHZCZZZC" depends-on="login"/>
+       </dependencies>    
+      </methods>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

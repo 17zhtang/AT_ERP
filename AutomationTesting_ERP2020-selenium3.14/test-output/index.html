@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-skipped">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\qkh\AppData\Local\Temp\testng-eclipse-190397665\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">17 methods,  1 skipped,  16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Default_suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.haoyun.automationtesting.framework.AutoCase_SinglePackage" hash-for-method="inputexcel">inputexcel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.haoyun.automationtesting.framework.AutoCase" hash-for-method="MainAutoCase">MainAutoCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.haoyun.automationtesting.framework.AutoCode" hash-for-method="Run">Run</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBRun_old" hash-for-method="YBdemo">YBdemo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.haoyun.automationtesting.test.aadomain.MainStart" hash-for-method="main">main</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.haoyun.automationtesting.test.aadomain.RunSelectCase" hash-for-method="run">run</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.haoyun.automationtesting.test.aadomain.RunSelectCase_thread2" hash-for-method="run">run</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.haoyun.automationtesting.test.aadomain.RunAllCase" hash-for-method="run">run</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.haoyun.automationtesting.framework.AutoSeleniumIDECode" hash-for-method="run">run</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.haoyun.automationtesting.framework.AutoJSCode" hash-for-method="run">run</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBDeviceRun" hash-for-method="run">run</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.haoyun.automationtesting.interfaces.MDdevices.MDDeviceRunCall" hash-for-method="runtest">runtest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBDeviceRunCall" hash-for-method="runtest">runtest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.haoyun.automationtesting.framework.showMessageFrame" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.haoyun.automationtesting.framework.RemoteFTP" hash-for-method="testFavFTPUtil">testFavFTPUtil</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.haoyun.automationtesting.test.aadomain.MainDebug" hash-for-method="zhu">zhu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.haoyun.automationtesting.test.aadomain.CodeToCase" hash-for-method="zhu">zhu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.haoyun.automationtesting.framework.AutoCase_SinglePackage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="inputexcel">
+                  </a> <!-- inputexcel -->
+                  <span class="method-name">inputexcel</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Method inputexcel requires 4 parameters but 0 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:191)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:127)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:376)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1287)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1004)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1093)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
+	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-skipped -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.haoyun.automationtesting.framework.RemoteFTP</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFavFTPUtil">
+                  </a> <!-- testFavFTPUtil -->
+                  <span class="method-name">testFavFTPUtil</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.haoyun.automationtesting.framework.AutoCode</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Run">
+                  </a> <!-- Run -->
+                  <span class="method-name">Run</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.haoyun.automationtesting.test.aadomain.MainStart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="main">
+                  </a> <!-- main -->
+                  <span class="method-name">main</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.haoyun.automationtesting.framework.AutoCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MainAutoCase">
+                  </a> <!-- MainAutoCase -->
+                  <span class="method-name">MainAutoCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.haoyun.automationtesting.test.aadomain.RunSelectCase_thread2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="run">
+                  </a> <!-- run -->
+                  <span class="method-name">run</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.haoyun.automationtesting.interfaces.MDdevices.MDDeviceRunCall</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runtest">
+                  </a> <!-- runtest -->
+                  <span class="method-name">runtest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBDeviceRunCall</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runtest">
+                  </a> <!-- runtest -->
+                  <span class="method-name">runtest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBDeviceRun</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="run">
+                  </a> <!-- run -->
+                  <span class="method-name">run</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.haoyun.automationtesting.test.aadomain.MainDebug</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="zhu">
+                  </a> <!-- zhu -->
+                  <span class="method-name">zhu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.haoyun.automationtesting.framework.showMessageFrame</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBRun_old</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="YBdemo">
+                  </a> <!-- YBdemo -->
+                  <span class="method-name">YBdemo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.haoyun.automationtesting.framework.AutoJSCode</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="run">
+                  </a> <!-- run -->
+                  <span class="method-name">run</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.haoyun.automationtesting.test.aadomain.RunSelectCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="run">
+                  </a> <!-- run -->
+                  <span class="method-name">run</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.haoyun.automationtesting.framework.AutoSeleniumIDECode</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="run">
+                  </a> <!-- run -->
+                  <span class="method-name">run</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.haoyun.automationtesting.test.aadomain.CodeToCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="zhu">
+                  </a> <!-- zhu -->
+                  <span class="method-name">zhu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.haoyun.automationtesting.test.aadomain.RunAllCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="run">
+                  </a> <!-- run -->
+                  <span class="method-name">run</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\qkh\AppData\Local\Temp\testng-eclipse-190397665\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.MDdevices.CRC32&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.page._H110&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h710设备列表.H710_0040&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0102&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.page._H710&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.AutoCase_SinglePackage&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.FileOperate&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0105&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.dao.GenericDao&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBRun_old&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h010机构管理.H010_0050&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.GetFileExcel&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0013&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0110&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0128&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.MDdevices.MDDeviceRunCall&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.YBdevices.utils.ConverterHelper&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h030角色管理.H030_0020&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h020用户管理.H020_0051&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.Config&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0021&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.YBdevices.utils.EncryptionHelper&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.aadomain.RunSelectCase_thread2&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.aadomain.MainStart&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0201&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.MDdevices.Model_Register&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h020用户管理.H020_0010&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h710设备列表.H710_0050&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.aop.LogAdviceSecond&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0115&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0206&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0120&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.page._htmp&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h010机构管理.H010_0040&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h710设备列表.H710_0030&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0024&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0102&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h030角色管理.H030_0030&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h020用户管理.H020_0030&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.ExcelOperate&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.aadomain.CodeToCase&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.CreateWordTest&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.MDdevices.Model_Reply_Command&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.aop.AroundAdvice&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.page._H840&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0118&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h710设备列表.H710_0060&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.MDdevices.Model_PushNetConfig&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0123&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.mysql&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0107&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.dao.HibernateDaoImpl&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h020用户管理.H020_0040&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.page._H820&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0100&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0023&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.YBdevices.model.MainModule&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.MDdevices.Model_push_event&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.aop.LogAdvice_20191126&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.aadomain.MainDebug&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.snapshot&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0122&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h710设备列表.H710_0080&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBPackage&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.page.PM&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h710设备列表.H710_0020&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.YBdevices.model.MeasureModule&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0113&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.Remotedownload&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.YBdevices.model.ProtocolTail&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.MDdevices.Model_PushSwConfig&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0204&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0104&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.CopyFile&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.aadomain.RunAllCase&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.YBdevices.model.ProtocolHeader&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0009&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.page._H320&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h010机构管理.H010_0060&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0040&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.MainWindow&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.page._H730&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0010&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0008&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0125&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0116&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h005基础数据.H005_0030&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h010机构管理.H010_0030&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.page._H030&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.Robots&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0114&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h020用户管理.H020_0070&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.ParseXml&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h005基础数据.H005_0040&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0030&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0205&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h005基础数据.H005_0050&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0101&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.AutoJSCode&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.YBdevices.utils.CheckSumHelper&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0004&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.TextFileSearch&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.YBdevices.model.ElectricModule&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBDeviceRun&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0119&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.RemoteSSH&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0124&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.TestCase&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.page._H750&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h010机构管理.H010_0010&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0103&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0106&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.AutoCase&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0030&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0111&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h020用户管理.H020_0060&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0012&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.page._H020&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.page._H050&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.log&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.page._H210&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0127&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.aadomain.RunSelectCase&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.page._H810&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.AutoSeleniumIDECode&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0020&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h020用户管理.H020_0052&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0202&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0050&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0109&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h710设备列表.H710_0070&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.AutoCode&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0112&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h030角色管理.H030_0040&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h710设备列表.H710_0010&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.page._H009&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h005基础数据.H005_0010&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h010机构管理.H010_0020&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0203&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.page._H740&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0020&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0103&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.aadomain.Actor&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.RemoteNetTelnet&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.action&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0126&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.YBdevices.packets.PacketBuilder&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0009&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.page._H010&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0011&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h005基础数据.H005_0020&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0117&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.aop.LogAdvice&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.page._H310&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.page._H830&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.RemoteFTP&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0010&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0108&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0101&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0040&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.readExcel&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0129&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0014&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.MDdevices.Model_StatusReport&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0022&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.framework.showMessageFrame&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h020用户管理.H020_0020&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h020用户管理.H020_0050&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0200&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h025曼顿设备业务流程.H025_0005&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0100&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h030角色管理.H030_0010&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBDeviceRunCall&quot;/&gt;
+      &lt;class name=&quot;com.haoyun.automationtesting.test.h026优柏设备业务流程.H026_0121&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (174 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'run')
+data.setCell(0, 2, 'com.haoyun.automationtesting.framework.AutoJSCode')
+data.setCell(0, 3, 3288513);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'run')
+data.setCell(1, 2, 'com.haoyun.automationtesting.test.aadomain.RunAllCase')
+data.setCell(1, 3, 1301786);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'run')
+data.setCell(2, 2, 'com.haoyun.automationtesting.test.aadomain.RunSelectCase')
+data.setCell(2, 3, 100069);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runtest')
+data.setCell(3, 2, 'com.haoyun.automationtesting.interfaces.MDdevices.MDDeviceRunCall')
+data.setCell(3, 3, 23728);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'run')
+data.setCell(4, 2, 'com.haoyun.automationtesting.test.aadomain.RunSelectCase_thread2')
+data.setCell(4, 3, 22011);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testFavFTPUtil')
+data.setCell(5, 2, 'com.haoyun.automationtesting.framework.RemoteFTP')
+data.setCell(5, 3, 21097);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'run')
+data.setCell(6, 2, 'com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBDeviceRun')
+data.setCell(6, 3, 21016);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runtest')
+data.setCell(7, 2, 'com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBDeviceRunCall')
+data.setCell(7, 3, 21011);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'YBdemo')
+data.setCell(8, 2, 'com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBRun_old')
+data.setCell(8, 3, 21007);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'zhu')
+data.setCell(9, 2, 'com.haoyun.automationtesting.test.aadomain.MainDebug')
+data.setCell(9, 3, 5173);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'run')
+data.setCell(10, 2, 'com.haoyun.automationtesting.framework.AutoSeleniumIDECode')
+data.setCell(10, 3, 4360);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'zhu')
+data.setCell(11, 2, 'com.haoyun.automationtesting.test.aadomain.CodeToCase')
+data.setCell(11, 3, 3111);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'MainAutoCase')
+data.setCell(12, 2, 'com.haoyun.automationtesting.framework.AutoCase')
+data.setCell(12, 3, 2947);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'test')
+data.setCell(13, 2, 'com.haoyun.automationtesting.framework.showMessageFrame')
+data.setCell(13, 3, 1294);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'main')
+data.setCell(14, 2, 'com.haoyun.automationtesting.test.aadomain.MainStart')
+data.setCell(14, 3, 141);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'Run')
+data.setCell(15, 2, 'com.haoyun.automationtesting.framework.AutoCode')
+data.setCell(15, 3, 3);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'inputexcel')
+data.setCell(16, 2, 'com.haoyun.automationtesting.framework.AutoCase_SinglePackage')
+data.setCell(16, 3, 0);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 hours</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.haoyun.automationtesting.test.aadomain.MainStart</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBRun_old</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">YBdemo</span>
+                <span class="method-start">12549 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.haoyun.automationtesting.interfaces.MDdevices.MDDeviceRunCall</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runtest</span>
+                <span class="method-start">33557 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.haoyun.automationtesting.test.aadomain.RunSelectCase_thread2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">run</span>
+                <span class="method-start">57288 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.haoyun.automationtesting.test.aadomain.CodeToCase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">zhu</span>
+                <span class="method-start">79300 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.haoyun.automationtesting.test.aadomain.MainDebug</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">zhu</span>
+                <span class="method-start">82412 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.haoyun.automationtesting.test.aadomain.RunAllCase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">run</span>
+                <span class="method-start">87587 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.haoyun.automationtesting.framework.AutoJSCode</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">run</span>
+                <span class="method-start">1389374 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBDeviceRun</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">run</span>
+                <span class="method-start">4677889 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.haoyun.automationtesting.framework.AutoCase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">MainAutoCase</span>
+                <span class="method-start">4698906 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.haoyun.automationtesting.test.aadomain.RunSelectCase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">run</span>
+                <span class="method-start">4701854 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.haoyun.automationtesting.framework.AutoSeleniumIDECode</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">run</span>
+                <span class="method-start">4801925 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.haoyun.automationtesting.framework.AutoCode</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Run</span>
+                <span class="method-start">4806286 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.haoyun.automationtesting.framework.RemoteFTP</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testFavFTPUtil</span>
+                <span class="method-start">4806291 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.haoyun.automationtesting.framework.showMessageFrame</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">4827391 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBDeviceRunCall</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runtest</span>
+                <span class="method-start">4828687 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.haoyun.automationtesting.test.aadomain.MainStart</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">main</span>
+                <span class="method-start">4849701 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">after</span>
+                <span class="method-start">4849842 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

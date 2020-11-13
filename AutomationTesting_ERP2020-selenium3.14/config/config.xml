@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+	<!-- 设置全局的等待时间waitTime -->
+	<waitTime>60</waitTime>
+	
+	<WebServer>
+	  <browser>谷歌</browser><!-- 谷歌、IE、火狐 -->
+	  <browserPWD>C:/Users/Administrator/AppData/Local/Google/Chrome/Application/</browserPWD><!-- C:/Users/Administrator/AppData/Local/Google/Chrome/Application/、C:/Program Files (x86)/Internet Explorer/iedriver_32.exe、C:/Program Files (x86)/Mozilla Firefox/geckodriver.exe -->
+	  <weburl>http://192.168.3.34:9010/#/login</weburl>
+	  <username>自动化基础数据3</username>
+	  <password>Hy2019</password>
+	</WebServer>
+	<!-- 接入服务未启用 -->
+	<JRServer>
+		<!-- 接入服务ip -->
+		<YBIP>192.168.3.34</YBIP>
+		<!-- 优柏设备端口 -->
+		<YBPort>40001</YBPort>
+		<!-- 曼顿设备端口 -->
+		<MDPort>5428</MDPort>
+		<!-- 曼顿超时时间 -->
+		<MD_TIME_OUT>3000</MD_TIME_OUT>
+	</JRServer>
+	<!-- mysql未启用  -->
+	<mysql>
+		<mysqlurl>jdbc:mysql://192.168.3.34:3306/basisdata</mysqlurl>
+		<mysqluser>root</mysqluser>
+		<mysqlpassword>Es@Haoyun+2020</mysqlpassword>
+	</mysql>
+     <!--  执行计划未启用  -->
+     <ExecutePlan><!-- 执行计划 -->
+         <caseExecuteNumber>0</caseExecuteNumber><!-- 用例执行次数 -->
+         <FailedCaseRepeatExecution>否</FailedCaseRepeatExecution><!-- 执行未通过用例是否再执行一次-->
+         <isReport>是</isReport><!-- 执行完成是否生成word报告 -->
+         <Executionscheduling>执行全部用例</Executionscheduling><!--执行调度：执行全部用例、当前默认、全部不执行 -->
+     </ExecutePlan>
+
+
+	<!-- 写入代码生成器。首行用例 -->
+	<autocode_1>
+		PublicMethod.return_sy();//返回首页
+	</autocode_1>
+	<!-- 写入代码生成器。import -->
+	<autocode_2>
+		import com.haoyun.automationtesting.framework.*;
+	</autocode_2>
+
+	<AutoUIrecorderToCode_pwd>
+		C:/nodejs/sample
+	</AutoUIrecorderToCode_pwd>
+
+	<AutoSeleniumIDEToCode_pwd>
+		C:/Users/Administrator/Downloads
+	</AutoSeleniumIDEToCode_pwd>
+
+
+
+</config>

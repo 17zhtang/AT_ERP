@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  
+  <test name="Test"  preserve-order="true"> <!-- preserve-order 可以保证class按照顺序执行 -->
+    <classes>
+      <class name="com.haoyun.automationtesting.test.aadomain.RunAllCase"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

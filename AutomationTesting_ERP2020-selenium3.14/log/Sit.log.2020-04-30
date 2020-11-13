@@ -1,0 +1,13 @@
+INFO|2020/04/30 17:21:40|=>TestProject.logInfo()[log.java:41] : 谷歌浏览器打开，web连接成功
+INFO|2020/04/30 17:21:43|=>org.springframework.context.support.ClassPathXmlApplicationContext.prepareRefresh()[AbstractApplicationContext.java:495] : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2dbf4cbd: startup date [Thu Apr 30 17:21:43 CST 2020]; root of context hierarchy
+INFO|2020/04/30 17:21:43|=>org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions()[XmlBeanDefinitionReader.java:315] : Loading XML bean definitions from class path resource [spring.xml]
+INFO|2020/04/30 17:21:43|=>org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons()[DefaultListableBeanFactory.java:557] : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c5204af: defining beans [MyInterceptor,logAdvice,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,testDao,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.aspectj.AspectJPointcutAdvisor#0,AppModule,bean,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+INFO|2020/04/30 17:21:46|=>TestProject.logInfo()[log.java:41] : 开始执行用例：com.haoyun.automationtesting.test.h810事件查询.H810_0080
+INFO|2020/04/30 17:21:54|=>TestProject.logInfo()[log.java:41] : pageTotal:43
+INFO|2020/04/30 17:22:09|=>TestProject.logInfo()[log.java:41] : 查询事件查询信息,事件:网络掉线报警
+INFO|2020/04/30 17:22:12|=>TestProject.logInfo()[log.java:41] : 截图路径是：snapshot\20200430-172212.png
+ERROR|2020/04/30 17:22:13|=>TestProject.logError()[log.java:56] : 用例验证失败
+INFO|2020/04/30 17:22:13|=>TestProject.logInfo()[log.java:41] : 执行完成'com.haoyun.automationtesting.test.h810事件查询.H810_0080'所用时间:26秒
+INFO|2020/04/30 17:22:15|=>TestProject.logInfo()[log.java:41] : 全部用例执行完成
+INFO|2020/04/30 17:22:15|=>TestProject.logInfo()[log.java:41] : 正在生成word版报告。。。。。。
+INFO|2020/04/30 17:22:16|=>TestProject.logInfo()[log.java:41] : word版报告生成完成。请到工程目录下/resource下面查看

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="test1" value="test11111"/>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.nantian.automationtesting.test.aadomain.mainStart">
+        <methods>
+          <include name="CcbInitAndroid"/>
+          <include name="main"/>
+        </methods>
+      </class> <!-- com.nantian.automationtesting.test.aadomain.mainStart -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

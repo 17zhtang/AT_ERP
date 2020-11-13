@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.haoyun.automationtesting.test.aadomain.MainStart">
+        <methods>
+          <include name="after"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.haoyun.automationtesting.test.aadomain.MainStart -->
+      <class name="com.haoyun.automationtesting.framework.AutoCase_SinglePackage">
+        <methods>
+          <include name="inputexcel"/>
+        </methods>
+      </class> <!-- com.haoyun.automationtesting.framework.AutoCase_SinglePackage -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

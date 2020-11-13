@@ -1,0 +1,14 @@
+java->editor->Save Actions->Format Source Code
+
+xpath("//title[@lang ='eng ']") //根据唯一的属性值定位
+xpath("//title [contains(text(),' Harry Potter ')]")//根据页面文本定位
+xpath("//title [contains(@id,' Harry)]")// 正则定位，id包含
+xpath("//title [start-with (@id,' Harry')]")//正则定位，id开头
+xpath("//input[ends-with (@id,' Potter)]")// 正则定位，id结尾
+
+
+//*[normalize-space(text()) and normalize-space(.)='"+string+"']/following::input[1]
+preceding
+更新：
+1、优化normalize_texts_click方法，存在多个文字时，会寻找可操作的第一个点击。
+2、增加js等待，等待页面完全加载。方法在 action。js_wait()

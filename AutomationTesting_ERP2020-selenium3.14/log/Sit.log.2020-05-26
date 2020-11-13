@@ -1,0 +1,5 @@
+INFO|2020/05/26 17:09:39|=>TestProject.logInfo()[log.java:41] : 发送一条报警：涌浪预警
+INFO|2020/05/26 17:19:33|=>TestProject.logInfo()[log.java:41] : 发送一条报警：浪涌报警
+INFO|2020/05/26 17:23:26|=>TestProject.logInfo()[log.java:41] : 发送一条报警：浪涌报警
+INFO|2020/05/26 17:53:38|=>TestProject.logInfo()[log.java:41] : 发送一条报警：浪涌报警
+INFO|2020/05/26 18:02:49|=>TestProject.logInfo()[log.java:41] : 发送一条报警：浪涌报警

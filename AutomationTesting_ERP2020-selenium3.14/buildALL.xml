@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<project default="execute">
+	<property name="src.dir" location="src"></property>
+	<property name="log.dir" location="log"></property>
+	<property name="resource.dir" location="resource"></property>
+	<property name="snapshot.dir" location="snapshot"></property>
+	<property name="build.dir" location="build"></property>
+	<property name="build.classes" location="${build.dir}/classes"></property>
+	<property name="build.src" location="${build.dir}/src"></property>
+	<property name="build.log" location="${build.dir}/log"></property>
+	<property name="build.resource" location="${build.dir}/resource"></property>
+	<property name="build.snapshot" location="${build.dir}/snapshot"></property>
+	<property name="build.snapshotbak" location="${build.dir}/snapshotbak"></property>
+	<property name="build.lib" location="${build.dir}/lib"></property>
+	<property name="lib.dir" location="lib"></property>
+	<property name="dll.dir" location="dll"></property>
+	<property name="build.dll" location="${build.dir}/dll"></property>
+
+
+	<fileset id="lib.path" dir="lib">
+		<include name="**/*.*"/>
+	</fileset>
+	<fileset id="resource.path" dir="resource">
+		<include name="**/*.*"/>
+	</fileset>
+	<fileset id="snapshot.path" dir="snapshot">
+		<include name="**/*.*"/>
+	</fileset>
+	<fileset id="snapshotbak.path" dir="snapshotbak">
+		<include name="**/*.*"/>
+	</fileset>
+	<fileset id="scr.path" dir="src">
+		<include name="**/*.*"/>
+	</fileset>
+	<fileset id="log.path" dir="log">
+		<include name="**/*.log"/>
+	</fileset>
+	<fileset id="dll.path" dir="dll">
+			<include name="**/*.*"/>
+	</fileset>
+
+	<path id="compile-path">
+		<fileset dir="${lib.dir}" includes="*.jar"></fileset>
+		<pathelement location="${build.src}"/>
+		<pathelement location="${build.log}"/>
+		<pathelement location="${build.resource}"/>
+		<pathelement location="${build.snapshot}"/>
+		<pathelement location="${build.snapshotbak}"/>
+		<pathelement location="${build.classes}"/>
+		<pathelement location="${build.dll}"/>
+	</path>
+	
+	<target name="init">
+		<delete dir="${build.dir}"></delete>
+		<mkdir dir="${build.dir}"/>
+		<mkdir dir="${build.src}"/>
+		<mkdir dir="${build.log}"/>
+		<mkdir dir="${build.resource}"/>
+		<mkdir dir="${build.snapshot}"/>
+		<mkdir dir="${build.snapshotbak}"/>
+		<mkdir dir="${build.classes}"/>
+		<mkdir dir="${build.dll}"/>
+	</target>
+	
+	<target name="copy" depends="init">
+		<copy todir="${build.src}">
+			<fileset refid="scr.path"></fileset>
+		</copy>
+		<copy todir="${build.log}">
+			<fileset refid="log.path"></fileset>
+		</copy>
+		<copy todir="${build.snapshot}">
+			<fileset refid="snapshot.path"></fileset>
+		</copy>
+		<copy todir="${build.snapshotbak}">
+			<fileset refid="snapshotbak.path"></fileset>
+		</copy>
+		<copy todir="${build.resource}">
+			<fileset refid="resource.path"></fileset>
+		</copy>
+		<copy todir="${build.lib}">
+			<fileset refid="lib.path"></fileset>
+		</copy>
+		<copy todir="${build.dll}">
+					<fileset refid="dll.path"></fileset>
+		</copy>
+	</target>
+	
+    <target name="compile" depends="copy">	
+        <javac destdir="${build.classes}" srcdir="${src.dir}" classpathref="compile-path" includeantruntime="true" encoding="UTF-8" >
+        </javac>
+
+    </target>
+ 
+
+	  <taskdef resource="testngtasks" classpathref="compile-path"></taskdef>
+	
+	<target name="execute" depends="compile">
+		<!-- <java classname="appium.frame.main.mainStart" classpathref="compile-path">
+	    	sysproperty key="file.encoding" value="UTF-8">
+	    </java>-->
+		<testng classpathref="compile-path">
+	    	<xmlfileset dir="${build.src}">
+	    		<include name="testngall.xml"/>
+	    	</xmlfileset>
+	    </testng>
+	     
+		<!--<java classpath="${build.classes}" classname="AutomationCCBFrameWork.mainStart" classpathref="compile-path"/>-->
+	</target>
+	
+</project>

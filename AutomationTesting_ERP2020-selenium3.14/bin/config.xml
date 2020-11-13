@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+	<!-- 设置全局的等待时间waitTime -->
+	<waitTime>60</waitTime>
+	<!-- 接入服务ip -->
+	<YBIP>192.168.8.184</YBIP>
+	<!-- 优柏设备端口 -->
+	<YBPort>40001</YBPort>
+	<!-- 曼顿设备端口 -->
+	<MDPort>5428</MDPort>
+	<!-- 曼顿超时时间 -->
+	<MD_TIME_OUT>3000</MD_TIME_OUT>
+	
+	
+	<!-- 写入代码生成器。首行用例 -->
+	<autocode_1>
+        PublicMethod.return_sy();//返回首页
+	</autocode_1>
+		<!-- 写入代码生成器。import -->
+	<autocode_2>
+        import com.haoyun.automationtesting.framework.*;
+	</autocode_2>
+	
+	<AutoUIrecorderToCode_pwd>
+		C:/nodejs/sample
+	</AutoUIrecorderToCode_pwd>
+	
+	<AutoSeleniumIDEToCode_pwd>
+	     C:/Users/Administrator/Downloads
+	</AutoSeleniumIDEToCode_pwd>
+	
+
+	<mysqlurl>
+        jdbc:mysql://192.168.8.50:3306/basisdata
+	</mysqlurl>
+	
+	<mysqluser>
+        root
+	</mysqluser>
+	
+	<mysqlpassword>
+       123456
+	</mysqlpassword>
+</config>

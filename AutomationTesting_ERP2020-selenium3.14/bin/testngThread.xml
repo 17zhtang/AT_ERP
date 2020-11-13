@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests" thread-count="2">
+  
+  <test name="Test1"  preserve-order="true"> <!-- preserve-order 可以保证class按照顺序执行 -->
+    <classes>
+     <!--  <class name="com.haoyun.automationtesting.test.aadomain.MainStart"/>-->
+     <class name="com.haoyun.automationtesting.test.aadomain.RunSelectCase"/>  
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test2"  preserve-order="true"> <!-- preserve-order 可以保证class按照顺序执行 -->
+    <classes>
+      <class name="com.haoyun.automationtesting.test.aadomain.RunSelectCase_thread2"/>  
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
