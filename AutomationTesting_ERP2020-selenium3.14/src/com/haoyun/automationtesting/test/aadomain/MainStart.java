@@ -6,6 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import com.haoyun.automationtesting.page.PM;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriver.Navigation;
@@ -25,7 +26,6 @@ import com.haoyun.automationtesting.framework.action;
 import com.haoyun.automationtesting.framework.log;
 import com.haoyun.automationtesting.framework.aop.LogAdvice;
 import com.haoyun.automationtesting.framework.aop.LogAdviceSecond;
-import com.haoyun.automationtesting.page.PM;
 
 /***
  * 主程序入口,自动执行在com.haoyun.automationtesting.test下的所有类

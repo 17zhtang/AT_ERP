@@ -1,21 +1,23 @@
 package com.haoyun.automationtesting.page;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.JavascriptExecutor;
-
 import com.haoyun.automationtesting.framework.Config;
 import com.haoyun.automationtesting.framework.ExcelOperate;
 import com.haoyun.automationtesting.framework.action;
 import com.haoyun.automationtesting.framework.log;
 import com.haoyun.automationtesting.test.aadomain.MainStart;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+
+import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 公共方法以及公共控件的封装
@@ -39,136 +41,67 @@ public class PM {
 	// static {
 	// driver = MainStart.driver;
 	// }
+
+	/**
+	 * 关联下单项目
+	 **/
+	public static String XMMC = "TZH自动化生产产品清单";
+
+	/**
+	 * 关联下单项目
+	 **/
+	public static String GLXDXM = "JRHY18920201111001";
+
+	/**
+	 * 开票单位
+	 **/
+	public static String KPDW = "浩云科技股份有限公司（销售票）";
+
+	/**
+	 * 工程商名称
+	 **/
+	public static String GCSMC = "GCS";
+
+	/**
+	 * 工程内容
+	 **/
+	public static String GCNR = "监控系统&防盗&联网";
+
+	/**
+	 * 业务负责人
+	 **/
+	public static String YWFZR = "唐展宏";
+
+	/**
+	 * 网点名称
+	 **/
+	public static String WDMC = "WD";
+
+	/**
+	 * 线下售前单号
+	 **/
+	public static String XXSQDH = "SQ";
+
+	/**
+	 * 生产售前单号
+	 **/
+	public static String SCSQDH = "XSXDHY189_000064-00";
+
+	/**
+	 * 预计交付时间
+	 **/
+	public static String YJJFSJ = "2077-12-03 14:44:31";
+
+
 	/** 时间随机数，不会重复，返回当天日期。格式“20170828120101” **/
 	public static String sjs = MainStart.timenow;// 随机数14位
-	public static String sjs6 = new SimpleDateFormat("ssSSS")
+	public static String sjs6 = new SimpleDateFormat("sssSSS")
 			.format(new Date());
+	
+	public static String nowTime = new SimpleDateFormat("MMddHHmmss").format(new Date());
 
 	/** 基础数据名称：自动化+6位随机数 **/
 	public static String jcsjmc = "自动化" + sjs6;
-
-	/** 关联下单项目**/
-	public static String GLXDXM = "JRHY18920201111001";
-
-	/** 开票单位**/
-	public static String KPDW = "浩云科技股份有限公司（销售票）";
-
-	/** 工程商名称**/
-	public static String GCSMC = "GCS";
-
-	/** 工程内容**/
-	public static String GCNR = "监控系统&防盗&联网";
-
-	/** 业务负责人**/
-	public static String YWFZR = "唐展宏";
-
-	/** 网点名称**/
-	public static String WDMC = "WD";
-
-	/** 线下售前单号**/
-	public static String XXSQDH = "SQ";
-
-	/** 生产售前单号**/
-	public static String SCSQDH = "XSXDHY189_000064-00" ;
-
-	/** 预计交付时间**/
-	public static String YJJFSJ = "2077-12-03 14:44:31";
-
-	/** 机构名称**/
-	public static String jgmc = "好运科技";//曼顿设备id：12位
-	/** 曼顿设备返回数据 **/
-	public static String MDReturnData = "";
-	/** 曼顿设备发送数据 **/
-	public static String MDSendData = "";
-
-	/** 优柏设备ID **/
-	public static String YBDeviceID = "11111111";//优柏设备id：8位
-	/** 优柏设备- 电流预警 **/
-	public static byte YBDeviceCurrentAlarmStatus = (byte) 0x00;
-	/** 优柏设备- 过流预警 **/
-	public static byte YBDeviceCurrentWarningStatus = (byte) 0x00;
-	/** 优柏设备- 温度上限预警 **/
-	public static byte YBDeviceTemperatureStatus = (byte) 0x00;
-	/** 优柏设备- 温度上限报警 **/
-	public static byte YBDevicemainModule_AlarmStatus = (byte) 0x00;
-	/** 优柏设备- 过压欠压报警 **/
-	public static byte YBDeviceVoltageStatus = (byte) 0x00;
-	/** 优柏设备- 输入缺相 **/
-	public static byte YBDevicephaseLossStatus = (byte) 0x00;
-	/** 优柏设备- 无源输入(开关量)-包括设备水浸报警，设备门磁报警 **/
-	public static byte YBDeviceinputIO = (byte) 0x00;
-	/** 优柏设备- 剩余电流报警 **/
-	public static byte YBDeviceleakageStatus = (byte) 0x00;
-
-	/** 优柏设备- 状态 **/
-	public static byte moduleStatus = (byte) 0x00;
-
-	/** 优柏设备返回数据 **/
-	public static String YBReturnData = "";
-	/** 优柏设备发送数据 **/
-	public static String YBSendData = "";
-
-	// 下面是首次获取页面数据
-	/** 首页上方铃铛-待处理报警 **/
-	public static String HEAD_DCLBJ = "";
-	/** 电子地图-今日报警数 **/
-	public static String H110_JRBJS = "";
-	/** 电子地图-今日故障数 **/
-	public static String H110_JRGZS = "";
-	/** 电子地图-本月报警数 **/
-	public static String H110_BYBJS = "";
-	/** 电子地图-本月故障数 **/
-	public static String H110_BYGZS = "";
-	/** 电子地图-未处理报警数 **/
-	public static String H110_WCLBJS = "";
-	/** 电子地图-未处理故障数 **/
-	public static String H110_WCLGZS = "";
-
-	/** 电子地图-在线数： **/
-	public static String H110_ZXS = "";
-	/** 电子地图-设备状态连接统计：离线数： **/
-	public static String H110_LXS = "";
-	/** 电子地图-正常数： **/
-	public static String H110_ZCS = "";
-	/** 电子地图-报警数： **/
-	public static String H110_BJS = "";
-	/** 电子地图-故障数： **/
-	public static String H110_GZS = "";
-	/** 电子地图-UPS闭合： **/
-	public static String H110_USBBH = "";
-	/** 电子地图-UPS断开： **/
-	public static String H110_USBDK = "";
-	/** 电子地图-市电闭合： **/
-	public static String H110_SDBH = "";
-	/** 电子地图-市电断开： **/
-	public static String H110_SDDK = "";
-
-	/** 实时监控-设备总数 **/
-	public static String H210_SBZS = "";
-	/** 实时监控-正常 **/
-	public static String H210_ZC = "";
-	/** 实时监控-报警 **/
-	public static String H210_BJ = "";
-	/** 实时监控-故障 **/
-	public static String H210_GZ = "";
-
-	/** 实时监控-获取列表中按钮状态，1为绿色正常，2为红色报警，3为橙色故障 **/
-	public static String H210_MDdevicestatus = "";
-
-	/** 报警管理-报警信息页面数据条数 **/
-	public static String H310_getPaginationTotal = "";
-
-	/** 报警管理-故障信息页面数据条数 **/
-	public static String H320_getPaginationTotal = "";
-
-	/** 日志管理-事件查询页面数据条数 **/
-	public static String H810_getPaginationTotal = "";
-	/** 日志管理-操作日志-软件操作日志页面数据条数 **/
-	public static String H820_getPaginationTotal = "";
-	/** 日志管理-操作日志-设备操作日志页面数据条数 **/
-	public static String H830_getPaginationTotal = "";
-	/** 日志管理-设备日志页面数据条数 **/
-	public static String H840_getPaginationTotal = "";
 
 	/***
 	 * 首次登陆
@@ -188,9 +121,10 @@ public class PM {
 		MainStart.driver.findElement(By.xpath("//*[@type='password']"))
 				.sendKeys(pw);
 		MainStart.driver.findElement(By.id("loginBtn")).click();
-	 //PM.normalize_texts_clicks("登 录");
-	  //  action.isplay_text("智慧用电安全监控系统", 10);
-		action.sleep(3);
+		
+		//PM.normalize_texts_clicks("登 录");
+//		action.isplay_text("智慧用电安全监控系统", 10);
+		 action.sleep(3);
 
 	}
 
@@ -234,9 +168,7 @@ public class PM {
 		MainStart.driver.findElement(By.xpath("//*[@type='password']")).clear();
 		MainStart.driver.findElement(By.xpath("//*[@type='password']"))
 				.sendKeys(password);
-		//PM.normalize_texts_clicks("登 录");
-		MainStart.driver.findElement(By.id("loginBtn")).click();//20201111
-
+		PM.normalize_texts_clicks("登录");
 		action.sleep(1);
 		action.JS_wait(200);
 		if (action.isdisplay(By.xpath("//*[@title='退出系统']"), 10)) {
@@ -246,6 +178,22 @@ public class PM {
 
 		}
 
+	}
+	
+	/***/
+	
+	/** 点击修改（人员管理）按钮 */
+	public static void click_XGRY() throws Exception {//
+
+		PM.normalize_text1_clicks("修改");
+		Thread.sleep(1000);
+	}
+	
+	/** 点击新增（人员管理）按钮 */
+	public static void click_XZRY() throws Exception {//
+
+		PM.normalize_texts_clicks("新增");
+		Thread.sleep(1000);
 	}
 
 	/** 点击搜索按钮 */
@@ -385,12 +333,45 @@ public class PM {
 		Thread.sleep(100);
 	}
 
-	// /**清空输入框按钮*/
-	// public static void XpathClear(By by) throws Exception {//
-	// driver.findElement(by).clear();
-	// }
-	//
+	/** 清除操作：修改人员姓名时清空文本框 */
+	public static void clear1(String text) throws Exception {//
+//		action.isdisplay(
+//				By.xpath("//*[normalize-space(text()) and normalize-space(.)='"
+//						+ text + "']/following::input[1]"), 10);
+		MainStart.driver.findElement(
+				By.xpath("//input[@data-id='CONTROL_TEXT_35']")).clear();
+		Thread.sleep(100);
+	}
+	
+	/** 清除操作：修改下单的单价时清空文本框 */
+	public static void clear2() throws Exception {
+	
+//		driver.switchTo().frame("fix-page-iframe");
+		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[starts-with(@id,'fix-page-iframe')]")));
+		
+//		WebElement iframe=driver.findElement(By.xpath("//*[@id='fix-page-iframe']"));
+//		driver.switchTo().frame(iframe);
+//		driver.switchTo().frame(iframe);
 
+		MainStart.driver.findElement(
+				By.xpath("//*[normalize-space(text()) and normalize-space(.)='货物单价（元）']//following::input[1]")).clear();
+		Thread.sleep(100);
+	}
+	
+	/** 清除操作：修改下单数量时清空文本框 */
+	public static void clear3() throws Exception {
+		
+//		driver.switchTo().frame("fix-page-iframe");
+//		driver.findElement(By.xpath("//*[@id='fix-page-iframe']"));
+		WebElement iframe=driver.findElement(By.xpath("//*[@id='fix-page-iframe']"));
+		driver.switchTo().frame(iframe);
+
+		MainStart.driver.findElement(
+				By.xpath("//*[normalize-space(text()) and normalize-space(.)='下单数量']//following::input[1]")).clear();
+		Thread.sleep(100);
+	}
+	
+	
 	/** 弹出窗口中的控件-点击操作：文本左边的单选框 ，如果有多个选择第一个 */
 	public static void pop_click_textradio(String text) throws Exception {//
 
@@ -398,7 +379,7 @@ public class PM {
 				.findElements(
 						By.xpath("//*[normalize-space(text()) and normalize-space(.)='"
 								+ text
-								+ "']/preceding::span[@class='button chk radio_false_full'][1]"))
+								+ "']/preceding::label[@role='radio'][1]"))
 				.get(0).click();
 		Thread.sleep(100);
 		action.JS_wait(200);
@@ -479,42 +460,18 @@ public class PM {
 	 */
 	public static void menu_text(String text) throws Exception {//
 		Thread.sleep(200);
-		// *[@class="el-submenu__title"]//*[normalize-space(text()) and
-		// normalize-space(.)='系统设置']
 		action.JS_MoveWebElement(By
-				.xpath("//*[@class='el-menu menu-bar-width']//*[normalize-space(text()) and normalize-space(.)='"
-						+ text + "']"));
+				.xpath("//a[@data-text='" + text + "']"));
 		action.isdisplay(
-				By.xpath("//*[@class='el-menu menu-bar-width']//*[normalize-space(text()) and normalize-space(.)='"
-						+ text + "']"), 10);
+				By.xpath("//a[@data-text='" + text + "']"), 10);
 		MainStart.driver
 				.findElement(
-						By.xpath("//*[@class='el-menu menu-bar-width']//*[normalize-space(text()) and normalize-space(.)='"
-								+ text + "']")).click();
+						By.xpath("//a[@data-text='" + text + "']")).click();
 		Thread.sleep(1000);
 		action.JS_wait(200);
 	}
 
-	// /**
-	// * 点击页面中的文字
-	// *
-	// * @param string
-	// * @throws InterruptedException
-	// * @throws ParseException
-	// */
-	// public static void pop_normalize_text_click(String string)
-	// throws InterruptedException, ParseException {
-	// action.JS_wait(200);
-	// action.isdisplay(By
-	// .xpath("//*[@class='el-dialog__body']//*[normalize-space(text()) and normalize-space(.)='"
-	// + string + "']"), 5);
-	// WebElement dr = driver.findElement(By
-	// .xpath("//*[@class='el-dialog__body']//*[normalize-space(text()) and normalize-space(.)='"
-	// + string + "']"));
-	// dr.click();
-	// Thread.sleep(100);
-	// action.JS_wait(200);
-	// }
+
 
 	// /**
 	// * 弹出窗口-页面中文字旁边的输入框
@@ -665,7 +622,8 @@ public class PM {
 					.findElements(
 							By.xpath(".//*[normalize-space(text()) and normalize-space(.)='"
 									+ text + "']")).size();
-			// log.logInfo("normalize_texts_clicks:size:"+size);
+			log.logInfo("text"+text);
+			 log.logInfo("normalize_texts_clicks:size:"+size);
 		} catch (Exception e) {
 		}
 
@@ -697,7 +655,62 @@ public class PM {
 		Thread.sleep(100);
 		action.JS_wait(200);
 	}
+	/**
+	 * 
+	 * 点击：页面文字,如果有多个就点击第一个
+	 * 
+	 * @throws InterruptedException
+	 * @throws ParseException
+	 * */
+	public static void normalize_text_clicks(String text) throws Exception {
+		Thread.sleep(100);
+		// if (action.isdisplay(By
+		// .xpath(".//*[normalize-space(text()) and normalize-space(.)='"
+		// + text + "']"), 5)) {
+		int size = 0;
 
+		try {
+			action.isdisplay(
+					By.xpath(".//*[normalize-space(text()) and normalize-space(.)='"
+							+ text + "']"), 5);
+			size = MainStart.driver
+					.findElements(
+							By.xpath(".//*[normalize-space(text()) and normalize-space(.)='"
+									+ text + "']")).size();
+			log.logInfo("text"+text);
+			 log.logInfo("normalize_texts_clicks:size:"+size);
+		} catch (Exception e) {
+		}
+
+		if (size == 0) {
+			log.logWarn("页面中没有找到文字:" + text + ",可能不是必选项");
+		}
+
+		for (int i = 0; i < size; i++) {
+
+			if (MainStart.driver
+					.findElements(
+							By.xpath(".//*[normalize-space(text()) and normalize-space(.)='"
+									+ text + "']")).get(i).isDisplayed()) {
+				Thread.sleep(100);
+				try {
+					MainStart.driver
+							.findElements(
+									By.xpath(".//*[normalize-space(text()) and normalize-space(.)='"
+											+ text + "']")).get(i).click();
+					break;
+				} catch (Exception e) {
+					// e.printStackTrace();
+					// log.logWarn("有多个，当前没找到第："+ i+"个");
+				}
+				// break;
+			}
+
+		}
+
+		Thread.sleep(100);
+		action.JS_wait(200);
+	}
 	/**
 	 * 点击：页面中文字后面的输入框,如果有多个就依次点击
 	 * 
@@ -848,8 +861,8 @@ public class PM {
 			action.JS_wait(200);
 		}
 		try {
-			if (action.isdisplay(By.xpath("//*[@title='退出系统']"), 10)) {
-
+//			if (action.isdisplay(By.id("logoutBtn"), 10)) {    默认
+			if (action.isdisplay(By.xpath("//*[contains(text(),'首页')]"), 10)) {
 				MainStart.driver.navigate().refresh();
 				action.sleep(1);
 				action.JS_wait(200);
@@ -932,47 +945,138 @@ public class PM {
 		}
 	}
 
+	
 	/**
-	 * 点击菜单栏
-	 * @param text
-	 */
-	public static void clickMenu(String text){
-		MainStart.driver.findElement(By.xpath("//a[@data-text='" +text+ "']")).click();
-	}
+	 * 
+	 * 列表中第一个修改按钮
+	 * 
+	 * @throws InterruptedException
+	 * @throws ParseException
+	 * */
+	public static void normalize_text1_clicks(String text) throws Exception {
+		Thread.sleep(100);
+		// if (action.isdisplay(By
+		// .xpath(".//*[normalize-space(text()) and normalize-space(.)='"
+		// + text + "']"), 5)) {
+		int size = 0;
 
-	/**
-	 * 用例执行结束，返回首页
-	 */
-	public static void returnMenu(){
-		action.JS_refresh();
-		action.sleep(1);
-	}
-
-
-
-
-	/**
-	 * 在带搜索图标的搜索框搜索并选中指定内容
-	 * @param text  输入框前的文本
-	 * @param text2 要搜索并选中的内容
-	 */
-	public static void search_select(String text, String text2) throws Exception{
 		try {
-			//PM.normalize_inputs_clicks(text);
-			PM.input_click(text);
-			MainStart.driver.findElement(By.xpath("//input[@ng-model='searchValue']")).sendKeys(text2);
-			MainStart.driver.findElement(By.xpath("//i[@class='glyphicon glyphicon-search']")).click();
-			PM.normalize_texts_clicks(text2);
-			//PM.normalize_texts_clicks("确定")
-			//action.findElements_click(By.xpath("//button[@class='hy-btn hy-btn-primary hy-bg hy-theme-border hy-bg-hover2 ng-scope']"),0);
-			action.findElement_click(By.xpath("//input[@ng-model='searchValue']/ancestor::*//div[@ng-controller='BaseModalController']//button[@ng-click='save()']"));
+			action.isdisplay(
+					By.xpath(".//*[normalize-space(text()) and normalize-space(.)='"
+							+ text + "']"), 5);
+			size = MainStart.driver
+					.findElements(
+							By.xpath(".//*[normalize-space(text()) and normalize-space(.)='"
+									+ text + "']")).size();
+			log.logInfo("text"+text);
+			 log.logInfo("normalize_texts_clicks:size:"+size);
+		} catch (Exception e) {
 		}
-		catch (Exception e ){
-			log.logWarn("search_select执行失败！");
+
+		if (size == 0) {
+			log.logWarn("页面中没有找到文字:" + text + ",可能不是必选项");
+		}
+
+		for (int i = 0; i < size; i++) {
+
+			if (MainStart.driver
+					.findElements(
+							By.xpath(".//*[normalize-space(text()) and normalize-space(.)='"
+									+ text + "']")).get(i).isDisplayed()) {
+				Thread.sleep(100);
+				try {
+					MainStart.driver
+							.findElements(
+									By.xpath(".//*[normalize-space(text()) and normalize-space(.)='"
+											+ text + "']")).get(i).click();
+					break;
+				} catch (Exception e) {
+					// e.printStackTrace();
+					// log.logWarn("有多个，当前没找到第："+ i+"个");
+				}
+				// break;
+			}
+
+		}
+
+		Thread.sleep(100);
+		action.JS_wait(200);
+	}
+	
+	/**
+	 * 点击弹窗搜索框，输入搜索内容
+	 */
+	public static void normalize_clickAndSendkeys(String text){
+		try {
+			action.findElement_sendkeys(By.xpath("//form[@id='searchform']/descendant::input"), text);
+		} catch (InterruptedException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * 点击弹窗搜索框后的搜索小图标
+	 */
+	public static void normalize_searchIcon(){
+		try {
+			action.findElement_click(By.xpath("//form[@id='searchform']/descendant::button"));
+		} catch (InterruptedException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * 是否执行此操作，是
+	 */
+	public static void normalize_yes(){
+		try {
+			action.findElement_click(By.xpath("//div/a[1][contains(text(),'是')]"));
+		} catch (InterruptedException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * 是否执行此操作，否
+	 */
+	public static void normalize_no(){
+		try {
+			action.findElement_click(By.xpath("//div/a[2][contains(text(),'否')]"));
+		} catch (InterruptedException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * 弹窗底部的【确定】按钮
+	 */
+	public static void normalize_bottom_QD(){
+		try {
+			action.findElement_click(
+					By.xpath("//body/div[1]//button[contains(text(),'确定')]"));
+		} catch (InterruptedException e) {
+			// TODO 自动生成的 catch 块
 			e.printStackTrace();
 		}
 	}
 
+	/**
+	 * 弹窗底部的【取消】按钮
+	 */
+	public static void normalize_bottom_QX(){
+		try {
+			action.findElement_click(
+					By.xpath("//body/div[1]//button[contains(text(),'取消')]"));
+		} catch (InterruptedException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		}
+	}
+	
 	/**
 	 * option 下拉选择 (主要用于产品基础信息模块)
 	 * text :下拉选项中的内容,如果有多个，依次点击
@@ -982,7 +1086,7 @@ public class PM {
 		try {
 			action.findElement_click(
 					By.xpath("//option[normalize-space(text()) and normalize-space(.)='"
-							+ text + "']"));
+									+ text + "']"));
 			size = MainStart.driver
 					.findElements(
 							By.xpath("//option[normalize-space(text()) and normalize-space(.)='"
@@ -993,25 +1097,25 @@ public class PM {
 				log.logWarn("下拉选择中没有找到文字:" + text + ",请重新定位");
 			}else{
 				log.logInfo("找到"+size+"个"+text+"==========");
-
+				
 				for (int i = 0; i < size; i++) {
 
 					if (MainStart.driver
 							.findElements(
 									By.xpath("//option[normalize-space(text()) and normalize-space(.)='"
-											+ text + "']"))
+									+ text + "']"))
 							.get(i).isDisplayed()) {
 
 						try {
 							MainStart.driver
 									.findElements(
 											By.xpath("//option[normalize-space(text()) and normalize-space(.)='"
-													+ text + "']"))
+									+ text + "']"))
 									.get(i).clear();
 							MainStart.driver
 									.findElements(
 											By.xpath("//option[normalize-space(text()) and normalize-space(.)='"
-													+ text + "']"))
+									+ text + "']"))
 									.get(i).click();
 						} catch (Exception e1) {
 
@@ -1020,45 +1124,95 @@ public class PM {
 					}
 				}
 			}
-
+			
 			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		}
+	}
+	
+	/**
+	 * 弹窗选择底部确定按钮
+	 */
+	public static void pop_QD(){
+		int size=0;
+		try {
+			action.findElement_click(By.xpath("//button[@ng-click='save()']"));
+			size = MainStart.driver
+					.findElements(
+							By.xpath("//button[@ng-click='save()']")).size();
+		} catch (InterruptedException e) {
+			// TODO 自动生成的 catch 块
+			if (size <= 0) {
+				log.logWarn("没有找到确定按钮,请重新定位");
+			}else{
+				log.logInfo("找到"+size+"个【确定】按钮==========");
+				
+			}
 			e.printStackTrace();
 		}
 	}
 
 	/**
+	 * 鼠标点击屏幕中的某一个点（用于关闭下拉多选框）
+	 */
+	public static void mouse_click(int x,int y){
+		Robot robot = null;
+		try {
+			robot = new Robot();
+		} catch (AWTException e) {
+			e.printStackTrace();
+		}
+		robot.mouseMove(500, 500);
+		robot.delay(1000);
+		robot.mousePress(KeyEvent.BUTTON1_MASK);
+		robot.mouseRelease(KeyEvent.BUTTON1_MASK);
+	}
+
+	/**
 	 * 在输入框输入文本
-	 * @param text 输入框前的标题
+	 *
+	 * @param text  输入框前的标题
 	 * @param text2 要输入的文本
 	 */
-	public static void input_sendKeys(String text, String text2) throws Exception{
+	public static void input_sendKeys(String text, String text2) throws Exception {
 		//MainStart.driver.findElement(By.xpath("//span[contains(.,'"+ text +"')]/parent::*/parent::*//input")).sendKeys(text2);
 		try {
-			MainStart.driver.findElement(By.xpath("//span[contains(.,'" + text + "')]/parent::div//input")).sendKeys(text2);
-		}catch(Exception e){
+			MainStart.driver
+					.findElement(
+							By.xpath("//span[contains(.,'"
+									+ text + "')]/parent::div//input")).sendKeys(text2);
+		} catch (Exception e) {
 
 		}
 	}
 
 	/**
 	 * 输入框前的标题
+	 *
 	 * @param text
 	 */
-	public static void input_click(String text) throws Exception{
-		MainStart.driver.findElement(By.xpath("//span[contains(.,'"+text  +"')]/parent::div//input")).click();
+	public static void input_click(String text) throws Exception {
+		MainStart.driver
+				.findElement(
+						By.xpath("//span[contains(.,'"
+								+ text + "')]/parent::div//input")).click();
 	}
 
 	/**
 	 * 下拉多选框
-	 * @param text 输入框前的标题
-	 * @param text2  要选择的项，多个则用 & 分开
+	 *
+	 * @param text  输入框前的标题
+	 * @param text2 要选择的项，多个则用 & 分开
 	 */
-	public static void multiple_select(String text, String text2) throws Exception{
+	public static void multiple_select(String text, String text2) throws Exception {
 		input_click(text);
 		String strings[] = text2.split("&");
-		for (int i=0; i<strings.length; i++){
+		for (int i = 0; i < strings.length; i++) {
 			//System.out.println(strings[i]);
-			MainStart.driver.findElement(By.xpath("//span[contains(.,'"+text+"')]/parent::div//li[@title='"+ strings[i] +"']")).click();
+			MainStart.driver
+					.findElement(
+							By.xpath("//span[contains(.,'"
+									+ text + "')]/parent::div//li[@title='" + strings[i] + "']")).click();
 			action.sleep(1);
 		}
 		//隐藏下拉多选框
@@ -1068,45 +1222,56 @@ public class PM {
 
 	/**
 	 * 点击指定表格标题栏中的操作按钮
-	 * @param text 表格标题
+	 *
+	 * @param text  表格标题
 	 * @param text2 操作按钮名称
 	 */
-	public static void click_operation_button_top_right(String text,String text2) throws Exception{
+	public static void click_operation_button_top_right(String text, String text2) throws Exception {
 		try {
-			MainStart.driver.findElement(By.xpath("//span[contains(.,'"+text+"')]/parent::*//button[contains(.,'"+text2+"')]")).click();
+			MainStart.driver
+					.findElement(
+							By.xpath("//span[contains(.,'"
+									+ text + "')]/parent::*//button[contains(.,'" + text2 + "')]")).click();
 			action.sleep(1);
-		}catch(Exception e){
+		} catch (Exception e) {
 
 		}
 	}
 
 	/**
 	 * 点击表格指定行后的操作按钮
-	 * @param text  行标识文本，可以是售前单号，货物编号等
-	 * @param text2  操作按钮名称
-	 */
-	public static void click_operation_button(String text, String text2) throws Exception{
-		try {
-			MainStart.driver.findElement(By.xpath("//span[contains(.,'" + text + "')]/ancestor::tr//button[contains(.,'"+ text2 +"')]")).click();
-			action.sleep(1);
-		}catch(Exception e){
-
-		}
-	}
-
-
-	/**
-	 * 点击表格指定行后的操作按钮
-	 * @param text  行标识文本，可以是售前单号，货物编号等
-	 * @param text2  行标识文本2，可以是售前单号，货物编号等
-	 * @param text3  操作按钮名称
 	 *
+	 * @param text  行标识文本，可以是售前单号，货物编号等
+	 * @param text2 操作按钮名称
 	 */
-	public static void click_operation_button(String text, String text2, String text3) throws Exception{
+	public static void click_operation_button(String text, String text2) throws Exception {
 		try {
-			MainStart.driver.findElement(By.xpath("//span[contains(.,'"+text+"')]/parent::*/parent::*//span[contains(.,'"+text2+"')]/ancestor::tr//button[contains(.,'"+text3+"')]")).click();
+			MainStart.driver
+					.findElement(
+							By.xpath("//span[contains(.,'"
+									+ text + "')]/ancestor::tr//button[contains(.,'" + text2 + "')]")).click();
 			action.sleep(1);
-		}catch(Exception e){
+		} catch (Exception e) {
+
+		}
+	}
+
+
+	/**
+	 * 点击表格指定行后的操作按钮
+	 *
+	 * @param text  行标识文本，可以是售前单号，货物编号等
+	 * @param text2 行标识文本2，可以是售前单号，货物编号等
+	 * @param text3 操作按钮名称
+	 */
+	public static void click_operation_button(String text, String text2, String text3) throws Exception {
+		try {
+			MainStart.driver
+					.findElement(
+							By.xpath("//span[contains(.,'"
+									+ text + "')]/parent::*/parent::*//span[contains(.,'" + text2 + "')]/ancestor::tr//button[contains(.,'" + text3 + "')]")).click();
+			action.sleep(1);
+		} catch (Exception e) {
 
 		}
 	}
@@ -1114,23 +1279,25 @@ public class PM {
 	/**
 	 * 判断表格内有没有行（根据下方统计）
 	 * 待调度安排页面适用
+	 *
 	 * @param text
 	 */
-	public static boolean judge_form(String text) throws Exception{
-		try{
-			String string = MainStart.driver.findElement(By.xpath("//div[contains(.,'需调度货物') and @class='hy-table-wrap']//li[contains(.,'总共')]")).getText();
-			String string1=string.substring(3,4);
-			int sum =Integer.parseInt(string1);
-			if(sum>0){
+	public static boolean judge_form(String text) throws Exception {
+		try {
+			String string = MainStart.driver
+					.findElement(
+							By.xpath("//div[contains(.,'需调度货物') and @class='hy-table-wrap']//li[contains(.,'总共')]"))
+					.getText();
+			String string1 = string.substring(3, 4);
+			int sum = Integer.parseInt(string1);
+			if (sum > 0) {
 				return true;
-			}
-			else{
+			} else {
 				return false;
 			}
-		}catch (Exception e){
+		} catch (Exception e) {
 
-		}
-		finally {
+		} finally {
 			return false;
 		}
 	}
@@ -1138,20 +1305,33 @@ public class PM {
 	/**
 	 * 点击表格左上角的全选框
 	 * 待调度安排页面适用
+	 *
 	 * @param text 表格左上角标题
 	 */
-	public static void select_form_all(String text) throws Exception{
+	public static void select_form_all(String text) throws Exception {
 		try {
-			MainStart.driver.findElement(By.xpath("//div[contains(.,'" + text + "') and @class='hy-table-wrap']//input[@ng-change='selectAllClick()']")).click();
+			MainStart.driver
+					.findElement(
+							By.xpath("//div[contains(.,'"
+									+ text +
+									"') and @class='hy-table-wrap']//input[@ng-change='selectAllClick()']")).click();
 			action.sleep(1);
-		}catch (Exception e ){
+		} catch (Exception e) {
 
 		}
 	}
 
-
-	public static void click_text(String text) throws Exception{
-		MainStart.driver.findElement(By.xpath("//*[contains(.,'" + text + "')]"));
+	/**
+	 * 点击表格中的文本
+	 *
+	 * @param text
+	 * @throws Exception
+	 */
+	public static void click_text(String text) throws Exception {
+		MainStart.driver
+				.findElement(
+						By.xpath("//span[contains(.,'"
+								+ text + "')]"));
 		action.sleep(1);
 	}
 
@@ -1159,10 +1339,97 @@ public class PM {
 	 * 点击填写表格的确定按钮
 	 * 用在报错 element is not clickable 的情况
 	 */
-	public static void click_form_QD() throws Exception{
+	public static void click_form_QD() throws Exception {
 //		MainStart.driver.findElement(By.xpath("//button[@ng-click='formSave()']")).click();
-		action.JS_EXE("arguments[0].click();",By.xpath("//button[@ng-click='formSave()']"));
+		action.JS_EXE("arguments[0].click();", By.xpath("//button[@ng-click='formSave()']"));
 		action.sleep(2);
 	}
 
+
+	public static void normalize_text_click(String text) {
+		try {
+			MainStart.driver
+					.findElements(
+							By.xpath(".//*[normalize-space(text()) and normalize-space(.)='"
+									+ text + "']")).get(0).click();
+		}catch(Exception e){
+
+		}
+	}
+
+	/**
+	 * 从首页进入特定流程的审核页面
+	 * 行标识文本可以是流程名称，发起用户，办理用户，创建时间等
+	 * @param text  行标识文本1
+	 * @param text2 行标识文本2
+	 */
+	public static void enter_review(String text, String text2){
+		PM.normalize_text_click("我的待办");
+		MainStart.driver.
+				findElement(By.xpath("//td[contains(.,'" + text +
+						"')]/ancestor::tr//td[contains(.,'" + text2 +
+						"')]/ancestor::tr//td[contains(.,'办理')]")).click();
+
+	}
+
+	/**
+	 * 点击菜单栏
+	 *
+	 * @param text
+	 */
+	public static void clickMenu(String text) {
+		MainStart.driver.findElement(By.xpath("//a[@data-text='" + text + "']")).click();
+	}
+
+	/**
+	 * 用例执行结束，返回首页
+	 */
+	public static void return_menu() {
+		action.JS_refresh();
+		action.sleep(1);
+	}
+
+
+	/**
+	 * 点击输入框，在弹出的带搜索图标的搜索框搜索并选中指定内容
+	 *
+	 * @param text  输入框前的文本
+	 * @param text2 要搜索并选中的内容
+	 */
+	public static void search_select(String text, String text2) throws Exception {
+		try {
+			//PM.normalize_inputs_clicks(text);
+			PM.input_click(text);
+			MainStart.driver.findElement(By.xpath("//input[@ng-model='searchValue']")).sendKeys(text2);
+			MainStart.driver.findElement(By.xpath("//i[@class='glyphicon glyphicon-search']")).click();
+			PM.normalize_texts_clicks(text2);
+			//PM.normalize_texts_clicks("确定")
+			//action.findElements_click(By.xpath("//button[@class='hy-btn hy-btn-primary hy-bg hy-theme-border hy-bg-hover2 ng-scope']"),0);
+			action.findElement_click(By.xpath("//input[@ng-model='searchValue']/ancestor::*//div[@ng-controller='BaseModalController']//button[@ng-click='save()']"));
+			action.sleep(1);
+		} catch (Exception e) {
+			log.logWarn("search_select执行失败！");
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * 在的带搜索图标的搜索框搜索并选中指定内容
+	 *
+	 * @param text  要搜索并选中的内容
+	 */
+	public static void search_select(String text) throws Exception {
+		try {
+			//PM.normalize_inputs_clicks(text);
+			MainStart.driver.findElement(By.xpath("//input[@ng-model='searchValue']")).sendKeys(text);
+			MainStart.driver.findElement(By.xpath("//i[@class='glyphicon glyphicon-search']")).click();
+			PM.normalize_texts_clicks(text);
+			//PM.normalize_texts_clicks("确定")
+			//action.findElements_click(By.xpath("//button[@class='hy-btn hy-btn-primary hy-bg hy-theme-border hy-bg-hover2 ng-scope']"),0);
+			action.findElement_click(By.xpath("//input[@ng-model='searchValue']/ancestor::*//div[@ng-controller='BaseModalController']//button[@ng-click='save()']"));
+		} catch (Exception e) {
+			log.logWarn("search_select执行失败！");
+			e.printStackTrace();
+		}
+	}
 }

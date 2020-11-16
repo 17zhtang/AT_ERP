@@ -3,8 +3,6 @@ package com.haoyun.automationtesting.test.aadomain;
 import org.testng.annotations.Test;
 
 import com.haoyun.automationtesting.framework.action;
-import com.haoyun.automationtesting.interfaces.YBdevices.ybdevice.YBDeviceRunCall;
-
 /**
  * 执行单个用例，主要用于代码调试时使用。
  * 
@@ -27,8 +25,7 @@ public class RunSelectCase_thread2 {
 		// MainStart.after();
 		action.sleep(1);
 
-		//YBDeviceRunCall.run("报警");
-		 YBDeviceRunCall.run("设备门磁报警");
+
 
 	}
 }

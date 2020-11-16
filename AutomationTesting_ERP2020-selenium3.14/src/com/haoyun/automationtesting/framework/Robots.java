@@ -60,7 +60,8 @@ public class Robots {
             keyPress(KeyEvent.VK_ENTER); // 按下 enter 换行
             robot.delay(3000);  //等待 3秒
             keyPressString("谢谢大家！！！！！");
-             
+            robot.mouseMove(1000,400);
+            robot.delay(100);
              
 
     }

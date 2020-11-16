@@ -36,26 +36,15 @@ public class H0502_0001 extends _H0502 implements TestCase {
             log.logInfo("开始新建方案产品销售单用例");
             H0502_enterMenu();
             H0502_XJ(PM.GLXDXM,PM.KPDW,PM.GCSMC,PM.GCNR,PM.YWFZR,PM.WDMC,PM.XXSQDH);
-//            H002_clickMenu();
-//            sleep(2);
-//            H002_delete(name);
-//            H002_searchByName(name);
-//            int flag;
-//            //判断页面是否存在该办公用品
-//            if (action.isdisplay(By.xpath("//span[@title='"+name+"']"), 1)){
-//                flag=0;
-//            } else {
-//                flag =1;
-//            }
-//            action.assertReport(flag, "删除办公用品用例通过","删除办公用品用例验证失败" , sheetname, index);
-//            H002_returnMenu();
-            // CaseStepEnd
-            action.assertReport(1, "用例通过","用例验证失败" , sheetname, index);
+            action.assertReport(By.xpath("span[@title='" + PM.GLXDXM + "'"), "用例通过", "用例验证失败", sheetname, index);
+            PM.return_menu();
         } catch (Exception e) {
             log.logError("用例验证失败");
             ExcelOperate.cellexcelerr(sheetname, index);
             e.printStackTrace();
+
         }
+
     }
 
 
